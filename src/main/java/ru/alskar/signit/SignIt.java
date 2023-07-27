@@ -36,13 +36,14 @@ public class SignIt extends JavaPlugin {
         final int pluginId = 12239;
         Metrics metrics = new Metrics(this, pluginId);
         // Adding update checker by Jeff Media:
+        /*
         final int spigotResourceID = 94720;
         UpdateChecker.init(this, spigotResourceID)
                 .suppressUpToDateMessage(true)
                 .checkEveryXHours(24)
                 .setNotifyOpsOnJoin(false)
                 .checkNow();
-
+        */
         // Registering commands:
         PaperCommandManager commandManager = new PaperCommandManager(this);
         commandManager.getCommandReplacements().addReplacement("signit", "signit|" +
@@ -54,6 +55,7 @@ public class SignIt extends JavaPlugin {
         // And listeners:
         getServer().getPluginManager().registerEvents(new ListenerMapCloning(), this);
         // Drawing cute kitten. For fun.
+        /*
         if (this.getConfig().getBoolean(Config.GREETING_KITTEN)) {
             log("Hey! What is it?\n" +
                     "\n──────────▄▀▄─────────▄▀▄" +
@@ -62,6 +64,7 @@ public class SignIt extends JavaPlugin {
                     "\n█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█");
             log("Oh, I see. Just two cute kittens looking at each other!");
         }
+         */
     }
 
     public void log(String message) {

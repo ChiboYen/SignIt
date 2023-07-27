@@ -14,10 +14,6 @@
 # You can even create your own!
 language: english
 
-# Shows cute kitten looking at you in the console when plugin is enabled.
-# Set it to false in case you're a dog person.
-enable-kitten-on-startup: true
-
 # If players' 'friendly' display names should be used instead of their real names in lore and messages.
 # If there are no plugins which change or allow players to change their display names on the server,
 # this should not make any difference.
